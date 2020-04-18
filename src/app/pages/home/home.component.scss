@@ -1,0 +1,92 @@
+.home-main {
+    display: flex;
+    flex-flow: row wrap;
+
+    &-loggedin {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+
+        & h2 {
+            font-size: 3rem;
+            font-family: sans-serif;
+            margin: 15px;
+            color: #f9f9f9;
+
+            @media (max-width: 500px) {
+                font-size: 2rem;
+            }
+        }
+
+        &-moneys { 
+            display: flex;
+            flex-flow: wrap row;
+            
+            @media (max-width: 500px) {
+                flex-flow: wrap column;
+                
+            }
+
+            &-balance {
+                width: 50%;
+
+                @media (max-width: 500px) {
+                    width: 100%;
+                }
+
+                &-bar {
+                    display: flex;
+                    flex-flow: wrap row;
+                    align-items: center;
+                    margin-bottom: 13px;
+
+                    & img {
+                        width: 25px;
+                        margin-right: 5px;
+                    }
+
+                    & p {
+                        margin: 0;
+                        font-size: 16px;
+                    }
+                }
+            } 
+
+            &-rate {
+                width: 50%;
+
+                @media (max-width: 500px) {
+                    width: 100%;
+                }
+
+                &-bar {
+                    display: flex;
+                    flex-flow: wrap row;
+                    align-items: center;
+                    margin-bottom: 13px;
+
+                    & img {
+                        width: 25px;
+                        margin-right: 5px;
+                    }
+
+                    & p {
+                        margin: 0;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        &-moves {
+            display: flex;
+            flex-flow: wrap row;
+            margin-bottom: 50px;
+        }
+
+        &-logout-btn {
+            align-self: flex-end;
+        }
+    }
+}

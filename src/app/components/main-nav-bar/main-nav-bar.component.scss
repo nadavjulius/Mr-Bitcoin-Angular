@@ -1,0 +1,45 @@
+.main-nav-bar {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    
+    @media (max-width: 575px) {
+        justify-content: space-evenly;
+    }
+    
+    @media (max-width: 500px) {
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    & li {
+        cursor: pointer;
+        display: flex;
+
+        & a {
+            display: flex;
+
+            & img {
+                margin: 7.5px 70px;
+                width: 37.5px;
+                filter: drop-shadow(1px 1px 1px black);
+                transition: filter 0.3s;
+
+                &:hover {
+                    filter: drop-shadow(3px 4px 6px black);
+                }
+
+                @media (max-width: 575px) {
+                    margin: 7.5px;
+                }
+            }
+        }
+    }
+}

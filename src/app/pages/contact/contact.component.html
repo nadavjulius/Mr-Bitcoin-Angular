@@ -1,0 +1,8 @@
+<section class="contacts container">
+    <section class="contacts-controls">
+        <contact-filter (onFilter)=onFilter($event)></contact-filter>
+        <button class="contacts-controls-add-btn main-btn" (click)="openEditPage()">+ Add</button>
+    </section>
+    <contact-list class="contacts-list" [contacts]="contacts"></contact-list>
+</section>
+

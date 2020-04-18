@@ -1,0 +1,6 @@
+<div class="signup container section-warp">
+    <p class="signup-title">Welcome!</p>
+    <p class="signup-subtitle"> what is your name?</p>
+    <input type="text" [(ngModel)]="username" (keydown.enter)="doSignup()">
+    <button (click)="doSignup()">Signup</button>
+</div>

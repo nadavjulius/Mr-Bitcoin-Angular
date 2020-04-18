@@ -1,0 +1,8 @@
+<section class="transfer-fund section-warp">
+    <h4 class="transfer-fund-title">Transfer coins to {{contactName}}</h4>
+    <div class="transfer-fund-input">
+        <span>Amount</span>
+        <input type="number" [(ngModel)]="amount" />
+        <button class="transfer-fund-send-btn" class="main-btn" (click)="doTransfer()">Transfer</button>
+    </div>
+</section>

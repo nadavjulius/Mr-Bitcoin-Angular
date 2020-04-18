@@ -1,0 +1,21 @@
+ .transfer-fund {
+    background-color: #eaeaea;
+
+    &-input {
+      margin-bottom: 5px;
+
+      & span {
+         margin-right: 5px;
+         font-weight: 600;
+         font-size: 1.2rem;
+      }
+
+      & input {
+         margin-right: 5px;
+         padding: 5px;
+         border-radius: 5px;
+         border: 1px black solid;
+         width: 50px;
+      }
+    }
+ }

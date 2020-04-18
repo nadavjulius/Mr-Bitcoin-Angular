@@ -1,0 +1,4 @@
+<div class="statistics">
+    <chart (onRangeChange)=onRangeChange($event) *ngIf="marketPriceData" [chartData]="marketPriceData" ></chart>
+    <chart (onRangeChange)=onRangeChange($event) *ngIf="confirmedTransactionsData" [chartData]="confirmedTransactionsData"></chart>
+</div>

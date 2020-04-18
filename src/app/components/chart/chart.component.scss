@@ -1,0 +1,27 @@
+.chart {
+    width: 310px;
+    margin: 0px 10px;
+
+    @media (max-width: 695px) {
+        margin: 10px 10px;
+    }
+
+    &-title {
+        margin-bottom: 5px;
+    }
+
+    &-btns {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+
+        & p {
+            margin: 0;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+}
